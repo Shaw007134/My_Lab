@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <title>SY's Lab</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./lib/effect.css">
+  <link rel="stylesheet" href="./lib/fullpage.min.css">
+</head>
+<body>
+  <div id="fullpage">
+      <header class="section">
+          <div class="welcome">
+              <div id='stars'></div>
+              <div id='stars2'></div>
+              <div id='stars3'></div>
+              <div id='title'>
+                <span>Welcome to</span>
+                <br>
+                <span>Shaw's Lab</span>
+              </div>
+              <div class="m-guide">
+                <i class="arr ani"></i>
+              </div>
+          </div>
+        </header>
+        
+        <section class="section" id="project">
+          <div class="sec_wrapper">
+            <h3 class="sec_tit">Projects</h3>
+            <ul class="sec_ul clearfix">
+              <li class="sec_li"><a href="" class="sec_a"></a></li>
+              <li class="sec_li"><a href="" class="sec_a"></a></li>
+              <li class="sec_li"><a href="" class="sec_a"></a></li>
+              <li class="sec_li"><a href="" class="sec_a"></a></li>
+            </ul>
+          </div>
+        </section>
+    
+        <section class="section" id="effects">
+          这是我做的特效
+        </section>
+    
+        <section class="section" id="game">
+          这是小游戏
+        </section>
+    
+        <section class="section" id="more">
+          这是更多
+        </section>
+  </div>
+
+  <footer></footer>
+  <script src="./lib/fullpage.min.js"></script>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+        anchors: ['page1', 'page2', 'page3', 'page4'],
+        navigationTooltips: ['fullPage', 'Open', 'Easy', 'Touch'],
+        css3: true,
+        scrollingSpeed: 1000,
+        navigation: true,
+        slidesNavigation: true,
+        responsiveHeight: 330,
+        dragAndMove: true,
+        controlArrows: false,
+        lazyLoading: true,
+    });
+
+
+    //methods
+    fullpage_api.setAllowScrolling(false);
+  </script>
+</body>
+</html>
